@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Overpass, sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.container {
+  background-color: hsl(213, 19%, 18%);
+  width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+}
+#star {
+  background-color: hsl(213, 19%, 25%);
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.rate {
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 25%);
+  border-radius: 50%;
+  border: none;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+.rating-button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.rate:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+.active {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+.rating-button:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+.rate:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+#thanks-state {
+  text-align: center;
+}
+
+.selected-option {
+  width: fit-content;
+  text-align: center;
+  background-color: hsl(213, 19%, 25%);
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: hsl(25, 97%, 53%);
+  margin: 25px auto;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: rebeccapurple;
+}
+
+.disabled {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  .attribution {
+    font-size: 0.9rem;
+  }
+}
